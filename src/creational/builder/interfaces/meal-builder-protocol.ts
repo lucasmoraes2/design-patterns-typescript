@@ -1,5 +1,5 @@
 export interface MealBuilderProtocol {
-    makeMeal(): this;
-    makeBeverage(): this;
-    makeDessert(): this;
+  makeMeal(): this;
+  makeBeverage(): this;
+  makeDessert(): this;
 }

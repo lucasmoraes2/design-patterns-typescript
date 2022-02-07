@@ -4,14 +4,14 @@ import { randomNumbers } from '../utils/random-numbers';
 import { Vehicle } from '../vehicle/vehicle';
 
 export function randomVehicleAlgorithm(): Vehicle {
-    const carFactory = new CarFactory();
-    const bicycleFactory = new BicycleFactory();
+  const carFactory = new CarFactory();
+  const bicycleFactory = new BicycleFactory();
 
-    const car1 = carFactory.getVehicle('Fusca');
-    const car2 = carFactory.getVehicle('Celta Preto');
-    const bicycle = bicycleFactory.getVehicle('Bicicleta');
+  const car1 = carFactory.getVehicle('Fusca');
+  const car2 = carFactory.getVehicle('Celta Preto');
+  const bicycle = bicycleFactory.getVehicle('Bicicleta');
 
-    const vehicles = [car1, car2, bicycle];
+  const vehicles = [car1, car2, bicycle];
 
-    return vehicles[randomNumbers(vehicles.length)];
+  return vehicles[randomNumbers(vehicles.length)];
 }

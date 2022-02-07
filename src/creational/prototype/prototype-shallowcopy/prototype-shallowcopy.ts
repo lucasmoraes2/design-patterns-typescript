@@ -1,24 +1,24 @@
 interface Prototype {
-    clone(): Prototype;
-}
-
-export class Person implements Prototype {
-    public addresses: Address[] = [];
-
-    constructor(public name: string, public age: number) {}
-
-    clone(): this {
-        const newObj = Object.create(this);
-        return newObj;
-    }
-
-    addAddress(address: Address): void {
-        this.addresses.push(address);
-    }
+  clone(): Prototype;
 }
 
 export class Address {
-    constructor(public street: string, public number: number) {}
+  constructor(public street: string, public number: number) {}
+}
+
+export class Person implements Prototype {
+  public addresses: Address[] = [];
+
+  constructor(public name: string, public age: number) {}
+
+  clone(): this {
+    const newObj = Object.create(this);
+    return newObj;
+  }
+
+  addAddress(address: Address): void {
+    this.addresses.push(address);
+  }
 }
 
 const address1 = new Address('Av Brasil', 15);

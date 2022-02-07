@@ -1,7 +1,7 @@
 export interface EmailValidatorProtocol {
-    isEmail: EmailValidatorFnProtocol;
+  isEmail: EmailValidatorFnProtocol;
 }
 
 export interface EmailValidatorFnProtocol {
-    (value: string): boolean;
+  (value: string): boolean;
 }

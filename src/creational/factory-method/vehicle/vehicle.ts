@@ -1,4 +1,4 @@
 export interface Vehicle {
-    pickUp(customerName: string): void;
-    stop(): void;
+  pickUp(customerName: string): void;
+  stop(): void;
 }

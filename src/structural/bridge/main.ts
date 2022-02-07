@@ -4,16 +4,16 @@ import { RemoteControl } from './remote-control/remote-control';
 import { RemoteControlWithVolume } from './remote-control/remote-control-with-volume';
 
 export function clientCode(
-    abstraction: RemoteControl | RemoteControlWithVolume,
+  abstraction: RemoteControl | RemoteControlWithVolume,
 ) {
-    abstraction.togglePower(); // true
+  abstraction.togglePower(); // true
 
-    // Type Guard
-    if (!('volumeUp' in abstraction)) return;
+  // Type Guard
+  if (!('volumeUp' in abstraction)) return;
 
-    abstraction.volumeUp(); // 20
-    abstraction.volumeUp(); // 30
-    abstraction.volumeDown(); // 20
+  abstraction.volumeUp(); // 20
+  abstraction.volumeUp(); // 30
+  abstraction.volumeDown(); // 20
 }
 
 const tv = new Tv();

@@ -4,12 +4,12 @@ import { IndividualCar } from '../vehicle/individual-car';
 import { VehicleProtocol } from '../vehicle/vehicle-protocol';
 
 export class IndividualCustomerVehicleFactory {
-    createCustomer(customerName: string): Customer {
-        return new IndividualCustomer(customerName);
-    }
+  createCustomer(customerName: string): Customer {
+    return new IndividualCustomer(customerName);
+  }
 
-    createVehicle(vehicleName: string, customerName: string): VehicleProtocol {
-        const customer = this.createCustomer(customerName);
-        return new IndividualCar(vehicleName, customer);
-    }
+  createVehicle(vehicleName: string, customerName: string): VehicleProtocol {
+    const customer = this.createCustomer(customerName);
+    return new IndividualCar(vehicleName, customer);
+  }
 }

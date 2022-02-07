@@ -1,11 +1,11 @@
 const personPrototype = {
-    firstName: 'Lucas',
-    lastName: 'Moraes',
-    age: 24,
+  firstName: 'Lucas',
+  lastName: 'Moraes',
+  age: 24,
 
-    fullName() {
-        return `${this.firstName} ${this.lastName}`;
-    },
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
 };
 
 const anotherPerson = Object.create(personPrototype);
